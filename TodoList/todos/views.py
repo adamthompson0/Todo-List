@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 @login_required()
 def home(request):
     todos = Todo.objects.filter(
-        is_completed=False, user=request.user).order_by('-priority_value')
+        is_completed=False, user=request.user).order_by('-priority__value')
     priorities = Priority.objects.all()
 
     context = {
