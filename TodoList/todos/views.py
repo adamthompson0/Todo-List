@@ -29,7 +29,7 @@ def create_todo(request):
         new_todo.text = todo_text
         new_todo.priority = priority
         new_todo.user = request.user
-        new_todo.save
+        new_todo.save()
 
         return redirect('home')
     else:

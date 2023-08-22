@@ -1,8 +1,15 @@
-<nav>
-    <a href="{% url 'home' %}">Home</a>
+{% load static %}
+<link rel="stylesheet" href= "{% static 'todos/todo.css'%}">
+<link rel="stylesheet" href="{% static 'user/user.css'%}">
+
+<nav class="material-nav">
     <ul>
+        <a href="{% url 'home' %}">Home</a>
+        {% if request.user.is_authenticated %}
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
         <li><a href="{% url 'signup' %}">Signup</a></li>
         <li><a href="{% url 'login' %}">Login</a></li>
-        <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% endif %}
     </ul>
 </nav>
