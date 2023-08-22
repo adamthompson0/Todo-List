@@ -1,0 +1,120 @@
+nav a{
+    padding: 6rem;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 4rem;
+}
+
+/* Todo List Container */
+.todo-list {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Todo Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #e0e0e0;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Add Task Button */
+.add-task-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* nav styles */
+/* Material Nav Styles */
+.material-nav {
+  background-color: #009688;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.material-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.material-nav li {
+  margin: 0 20px;
+}
+
+.material-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.material-nav a:hover {
+  background-color: #00796b;
+}
+
+/* Active Link Style */
+.material-nav a.active {
+  background-color: #004d40;
+}
