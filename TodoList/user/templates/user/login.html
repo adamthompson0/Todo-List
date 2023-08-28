@@ -7,7 +7,7 @@
         <form action="" method="post" class='login-form'>
            <h1 class='login-title'>Login</h1>
            {% csrf_token %}
-           {{form}}
+           {{form.as_p}}
            <button class='login-button'>Login</button>
        </form>
 </div>

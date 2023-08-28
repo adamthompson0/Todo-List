@@ -11,7 +11,7 @@
   /* Login Form */
   .login-form {
     background-color: #fff;
-    padding: 3rem;
+    padding: 4rem;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -33,6 +33,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 18px;
   }
   
   .login-button:hover {
@@ -42,6 +43,7 @@
 /* header */
 .login-title{
     justify-content: center;
+    display: flex;
 }
   
 /* sign up */
@@ -57,7 +59,7 @@
   /* Signup Form */
 .signup-form {
     background-color: #fff;
-    padding: 20px;
+    padding: 63px;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -97,6 +99,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
   }
   
   .signup-button:hover {
@@ -104,8 +107,12 @@
   }
   
   
+/* form */
+form p{
+    padding-top: 1rem;
+}
   
   
-  
-  
-  
+.helptext{
+    display: none;
+}
