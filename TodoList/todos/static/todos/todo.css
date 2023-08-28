@@ -1,5 +1,20 @@
-nav a{
-    padding: 6rem;
+
+.material-nav a{
+  padding: 2rem;
+}
+.a-logout{
+  margin-bottom: 18px;
+  
+}
+
+.a-home{
+  top: 13px;
+  position: absolute;
+  margin-left: 8px;
+}
+
+.a-login{
+  margin: -71px;
 }
 
 body {
@@ -65,7 +80,7 @@ body {
 }
 
 /* Add Task Button */
-.add-task-button {
+.add-todo-button {
   padding: 10px 20px;
   background-color: #4caf50;
   color: #fff;
@@ -75,7 +90,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.add-task-button:hover {
+.add-todo-button:hover {
   background-color: #45a049;
 }
 
@@ -88,6 +103,7 @@ body {
   background-color: #009688;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-size: 16px;
+  display: flex;
 }
 
 .material-nav ul {
@@ -95,11 +111,11 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 18px 0;
 }
 
 .material-nav li {
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
 .material-nav a {
