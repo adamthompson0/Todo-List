@@ -34,3 +34,14 @@ def create_todo(request):
         return redirect('home')
     else:
         return redirect('login')
+    
+
+def delete_todo(request, pk):
+    if request.user.is_authenticated:
+        todo = Todo.objects.get(pk=pk)
+
+        todo.delete()
+        return redirect('home')
+    else:
+        return redirect('login')
+
