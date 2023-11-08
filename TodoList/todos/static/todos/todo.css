@@ -17,6 +17,12 @@
   margin: -71px;
 }
 
+.a-user{
+  display: flex;
+  position: relative;right: -1055px;
+  color: #fff;
+}
+
 body {
     background-color: #000;
     color: #fff;
@@ -94,13 +100,26 @@ body {
   background-color: #45a049;
 }
 
+.add-delete-button{
+  padding: 3px 9px;
+  background-color: #bb1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.add-delete-button:hover {
+  background-color: #6f1313;
+}
 
 
 
 /* nav styles */
 /* Material Nav Styles */
 .material-nav {
-  background-color: #009688;
+  background-color: #29a0fa;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-size: 16px;
   display: flex;
@@ -127,7 +146,7 @@ body {
 }
 
 .material-nav a:hover {
-  background-color: #00796b;
+  background-color: #0c2e53;
 }
 
 /* Active Link Style */

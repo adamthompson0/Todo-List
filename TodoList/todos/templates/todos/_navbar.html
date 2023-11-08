@@ -7,6 +7,7 @@
         <li><a class='a-home' href="{% url 'home' %}">Home</a></li>
         {% if request.user.is_authenticated %}
         <li><a class='a-logout' href="{% url 'logout' %}">Logout</a></li>
+        <li><h3 class='a-user'>Hello, {{request.user.username}}</h3></li>
         {% else %}
         <li><a class='a-signup' href="{% url 'signup' %}">Signup</a></li>
         <li><a class='a-login' href="{% url 'login' %}">Login</a></li>

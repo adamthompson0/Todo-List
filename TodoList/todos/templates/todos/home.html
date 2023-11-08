@@ -9,11 +9,6 @@
             <h1>Todo App</h1>
         </header>
         
-        {% if request.user.is_authenticated %}
-        <h3>Hello {{request.user.username}}</h3>
-        {% endif %}
-        
-        
         <form action="{% url 'create_todo' %}" method='post'>
             {% csrf_token %}
             <input type='text' name='text' placeholder='Todo:'>
@@ -31,10 +26,10 @@
             <p>{{ todo.text }}</p>
             <p>Created: {{ todo.created_at }}</p>
             <p>Priority: {{ todo.priority.text }}</p>
+            <a role="button" class="outline warning  add-delete-button" href="{% url 'delete_todo' todo.id %}">Delete</a>
             <hr>
             {% endfor %}
         </div>
     </div>
-
 </body>
 </html>
